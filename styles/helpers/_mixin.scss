@@ -1,0 +1,35 @@
+@mixin background-gradient(
+  $direction: to top,
+  $start-color: $primary,
+  $end-color: $secondary
+) {
+  background-image: linear-gradient($direction, $start-color, $end-color);
+}
+
+@mixin text-gradient(
+  $direction: to top,
+  $start-color: $primary,
+  $end-color: $secondary
+) {
+  background-image: linear-gradient($direction, $start-color, $end-color);
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin title-line($x-position: 50%) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    height: 3px;
+    width: 50px;
+    background-color: $primary;
+    left: $x-position;
+
+    @if ($x-position != 0) {
+      transform: translateX(-50%);
+    }
+  }
+}
