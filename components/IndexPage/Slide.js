@@ -33,9 +33,9 @@ const Slide = () => {
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}
             >
-              {slideContent.map((slide) => (
-                <SwiperSlide>
-                  <div className="d-lg-flex">
+              {slideContent.map((slide, i) => (
+                <SwiperSlide key={slide.title + i}>
+                  <div className="d-lg-flex ps-4">
                     <div className="slide-image">
                       <img
                         src="./images/share.jpg"
@@ -45,7 +45,7 @@ const Slide = () => {
                     <div className="bg-white text-black py-6 px-7 p-lg-8 testimonial-container align-self-end position-relative">
                       <Image
                         src={slide.image}
-                        className="position-absolute rounded-circle end-0 top-0 translate-middle-y me-8"
+                        className="position-absolute rounded-circle end-0 top-0 translate-middle-y me-xl-8"
                         width={100}
                         height={100}
                       />
@@ -62,7 +62,7 @@ const Slide = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="text-center text-lg-start col-md-9 p-12 d-flex flex-column flex-lg-row bg-gray-900 rounded-24 align-items-center gap-6 gap-lg-12">
-            <span class="material-icons fs-80">menu_book</span>
+            <span className="material-icons fs-80">menu_book</span>
             <div className="flex-grow-1">
               <h6 className="mb-2 h3">加入我們成為導師</h6>
               <p className="mb-0">

@@ -54,6 +54,17 @@ const Feature = () => {
               </p>
             </div>
           </li>
+          <li className="col-md-6 col-lg-3 text-center d-none d-md-block d-lg-none ">
+            <div className="px-6 py-12 rounded-12 feature-card">
+              <span className="material-icons-outlined mb-6">luggage</span>
+              <h6 className="mb-4">好想出去玩喔</h6>
+              <p className="mb-0">
+                這只是為了排版好看出現的
+                <br />
+                Resize就會消失了XD
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>

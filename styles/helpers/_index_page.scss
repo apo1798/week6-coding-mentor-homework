@@ -40,6 +40,9 @@ $rounded-border-radius: 10px;
   @include pad {
     background-size: cover;
   }
+  @include mobile {
+    background-image: url("../../public/images/bg_home_mobile.jpg");
+  }
 }
 
 .square {

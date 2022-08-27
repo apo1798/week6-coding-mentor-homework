@@ -16,6 +16,7 @@ const Header = () => {
                   width={174}
                   height={42}
                   alt="Coding Home Logo"
+                  className=""
                 />
               </a>
             </Link>
@@ -36,7 +37,7 @@ const Header = () => {
               className="collapse navbar-collapse flex-grow-0"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav d-lg-flex mt-4 gap-6 mt-lg-0 gap-lg-12">
+              <ul className="navbar-nav d-lg-flex mt-8 gap-6 mt-lg-0 gap-lg-12">
                 <li>
                   <Link href="/">
                     <a className="text-white link-primary text-decoration-none">
@@ -53,7 +54,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="/">
-                    <a className="text-white link-primary text-decoration-none d-flex">
+                    <a className="text-white link-primary text-decoration-none d-flex gap-3">
                       <span className="material-icons">account_circle</span>
                       登入
                     </a>

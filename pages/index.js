@@ -1,3 +1,6 @@
+import Head from "next/head";
+import SiteTitle from "../components/Layout/SiteTitle";
+
 import Course from "../components/IndexPage/Course";
 import Feature from "../components/IndexPage/Feature";
 import Gallery from "../components/IndexPage/Gallery";
@@ -10,16 +13,19 @@ import Slide from "../components/IndexPage/Slide";
 
 const Home = () => {
   return (
-    <Layout>
-      <Hero />
-      <Feature />
-      <Process />
-      <Programming />
-      <Course />
-      <Gallery />
-      <Article />
-      <Slide />
-    </Layout>
+    <>
+      <SiteTitle siteTitle="首頁" />
+      <Layout>
+        <Hero />
+        <Feature />
+        <Process />
+        <Programming />
+        <Course />
+        <Gallery />
+        <Article />
+        <Slide />
+      </Layout>
+    </>
   );
 };
 
