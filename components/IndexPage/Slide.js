@@ -16,14 +16,14 @@ import "swiper/css/pagination";
 
 const Slide = () => {
   return (
-    <section className="bg-black pb-20">
-      <div className="py-20 container slide-container">
+    <section className="bg-black pb-10 pb-lg-20">
+      <div className="py-10 py-lg-20 container-fluid slide-container">
         <Title
           title={"專屬你的學習課程\n超過 3000 位學員得到了程式超能力"}
           className="mb-16"
         />
         <div className="row justify-content-center">
-          <div className="col-md-8 -translate-x-12 position-relative mb-40">
+          <div className="col-md-8 -translate-x-12 position-relative mb-10 mb-lg-40">
             <Swiper
               modules={[Navigation, Pagination]}
               navigation
@@ -35,14 +35,14 @@ const Slide = () => {
             >
               {slideContent.map((slide) => (
                 <SwiperSlide>
-                  <div className="d-flex">
-                    <div className="w-50 slide-image">
+                  <div className="d-lg-flex">
+                    <div className="slide-image">
                       <img
                         src="./images/share.jpg"
                         className="rounded-24 back-white-outline w-100"
                       />
                     </div>
-                    <div className="w-50 bg-white text-black p-8 testimonial-container align-self-end position-relative">
+                    <div className="bg-white text-black py-6 px-7 p-lg-8 testimonial-container align-self-end position-relative">
                       <Image
                         src={slide.image}
                         className="position-absolute rounded-circle end-0 top-0 translate-middle-y me-8"
@@ -50,7 +50,7 @@ const Slide = () => {
                         height={100}
                       />
                       <h6>{slide.title}</h6>
-                      <p>{slide.text}</p>
+                      <p className="mb-0">{slide.text}</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -61,7 +61,7 @@ const Slide = () => {
       </div>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-md-9 p-12 d-flex bg-gray-900 rounded-24 align-items-center gap-12">
+          <div className="text-center text-lg-start col-md-9 p-12 d-flex flex-column flex-lg-row bg-gray-900 rounded-24 align-items-center gap-6 gap-lg-12">
             <span class="material-icons fs-80">menu_book</span>
             <div className="flex-grow-1">
               <h6 className="mb-2 h3">加入我們成為導師</h6>
@@ -69,7 +69,7 @@ const Slide = () => {
                 歡迎各大程式大神加入我們，用知識在世界留下一點影響力。
               </p>
             </div>
-            <button className="btn btn-outline-light pt-2 px-8">
+            <button className="btn btn-outline-light py-2 px-8">
               立即預約
             </button>
           </div>

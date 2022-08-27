@@ -1,5 +1,4 @@
 // {image: Teacher01, teacherName: 'Belinda', title: '',category:'',description:'',time:'',price:''}
-import { useRef } from "react";
 import Image from "next/image";
 
 const CourseCard = ({
@@ -11,14 +10,9 @@ const CourseCard = ({
   time,
   price,
 }) => {
-  const cardRef = useRef();
-
   return (
-    <div className="col-md-3">
-      <div
-        className="bg-gray-300 rounded-24 h-100 d-flex flex-column border border-gray-900 course-card"
-        ref={cardRef}
-      >
+    <div className="col-md-6 col-lg-3">
+      <div className="bg-gray-300 rounded-24 h-100 d-flex flex-column border border-gray-900 course-card">
         <div className="px-6 pt-6 pb-8 flex-grow-1 d-flex flex-column">
           <div className="text-center">
             <Image

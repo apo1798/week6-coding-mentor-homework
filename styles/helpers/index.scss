@@ -66,6 +66,20 @@ svg {
 .-translate-x-12 {
   transform: translateX(-12px);
 }
+.fs-pad-12 {
+  @include pad {
+    font-size: 12px;
+  }
+}
+.fs-18 {
+  font-size: 18px !important;
+}
 .fs-80 {
   font-size: 80px;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.font-Azeret {
+  font-family: "Azeret Mono";
 }

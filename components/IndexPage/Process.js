@@ -10,11 +10,11 @@ const content = [
 
 const Process = () => {
   return (
-    <section className="feature-section">
-      <div className="container py-20">
-        <Title title="預期上課流程" className="mb-22" />
-        <ul className="row list-unstyled">
-          <li className="col-md-3 ">
+    <section className="">
+      <div className="container py-10 py-lg-20">
+        <Title title="預期上課流程" className="mb-16 mb-lg-22" />
+        <ul className="row list-unstyled mb-0 gap-12 gap-md-0 gy-10">
+          <li className="col-md-6 col-lg-3">
             <div className="border border-white process-card rounded-12 p-12">
               <h6 className="h1 text-primary">01</h6>
               <h4 className="mb-4">預約</h4>
@@ -25,7 +25,7 @@ const Process = () => {
               </p>
             </div>
           </li>
-          <li className="col-md-3 ">
+          <li className="col-md-6 col-lg-3 ">
             <div className="border border-white process-card rounded-12 p-12">
               <h6 className="h1 text-primary">02</h6>
               <h4 className="mb-4">付款</h4>
@@ -36,7 +36,7 @@ const Process = () => {
               </p>
             </div>
           </li>
-          <li className="col-md-3 ">
+          <li className="col-md-6 col-lg-3 ">
             <div className="border border-white process-card rounded-12 p-12">
               <h6 className="h1 text-primary">03</h6>
               <h4 className="mb-4">上課</h4>
@@ -47,7 +47,7 @@ const Process = () => {
               </p>
             </div>
           </li>
-          <li className="col-md-3 ">
+          <li className="col-md-6 col-lg-3 ">
             <div className="border border-white process-card rounded-12 p-12">
               <h6 className="h1 text-primary">04</h6>
               <h4 className="mb-4">提供滿意度</h4>

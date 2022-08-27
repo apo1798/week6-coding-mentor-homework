@@ -9,10 +9,10 @@ import Image03 from "../../public/images/article03.jpg";
 
 const Article = () => {
   return (
-    <section className="article-section py-20">
+    <section className="article-section py-10 py-lg-20">
       <Title title="文章分享" className="mb-16" />
       <div className="container">
-        <div className="row">
+        <div className="row gap-6 gap-md-0">
           {articleContent.map((article) => (
             <ArticleCard
               key={article.title}

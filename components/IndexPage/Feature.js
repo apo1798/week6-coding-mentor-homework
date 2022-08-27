@@ -1,17 +1,25 @@
+import Title from "../UI/Title";
+
 const Feature = () => {
   return (
     <section className="bg-gray-300 feature-section">
-      <div className="container py-20">
-        <ul className="row align-items-center list-unstyled">
-          <li className="col-md-3">
-            <h3 className="mb-4">
-              手把手帶你
-              <br />
-              親自到家教到會
-            </h3>
-            <div className="feature-title-line"></div>
+      <div className="container py-10 py-lg-20">
+        <ul className="row align-items-center list-unstyled mb-0 gap-6 gy-4 gap-md-0">
+          <li className="col-lg-3">
+            <div className="d-none d-lg-block">
+              <h3 className="text-center text-lg-start mb-4">
+                手把手帶你
+                <br />
+                親自到家教到會
+              </h3>
+              <div className="feature-title-line"></div>
+            </div>
+            <Title
+              className="d-lg-none mb-4"
+              title={"手把手帶你\n親自到家教到會"}
+            />
           </li>
-          <li className="col-md-3 text-center ">
+          <li className="col-md-6 col-lg-3 text-center ">
             <div className="px-6 py-12 rounded-12 feature-card">
               <span className="material-icons-outlined mb-6">code</span>
               <h6 className="mb-4">超過 100 種專業課程</h6>
@@ -22,7 +30,7 @@ const Feature = () => {
               </p>
             </div>
           </li>
-          <li className="col-md-3 text-center ">
+          <li className="col-md-6 col-lg-3 text-center ">
             <div className="px-6 py-12 rounded-12 feature-card">
               <span className="material-icons-outlined mb-6">
                 <span className="material-icons-outlined">rocket_launch</span>
@@ -35,7 +43,7 @@ const Feature = () => {
               </p>
             </div>
           </li>
-          <li className="col-md-3 text-center ">
+          <li className="col-md-6 col-lg-3 text-center ">
             <div className="px-6 py-12 rounded-12 feature-card">
               <span className="material-icons-outlined mb-6">place</span>
               <h6 className="mb-4">指定地點</h6>

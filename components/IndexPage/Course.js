@@ -11,10 +11,10 @@ import CourseCard from "./CourseCard";
 
 const Course = () => {
   return (
-    <section className="course-section py-20">
+    <section className="course-section py-10 py-lg-20">
       <div className="container">
-        <Title title="熱門推薦課程" className="mb-21" />
-        <div className="row mb-12">
+        <Title title="熱門推薦課程" className="mb-10 mb-lg-21" />
+        <div className="row mb-6 mb-lg-12 gap-4 gap-md-0 gy-4 ">
           {courseContent.map((course) => (
             <CourseCard
               key={course.title}
@@ -24,13 +24,13 @@ const Course = () => {
               category={course.category}
               description={course.description}
               time={course.time}
-              price={course.time}
+              price={course.price}
             />
           ))}
         </div>
         <div className="text-center">
           <Link href="/">
-            <a className="btn background-gradient-left link-dark text-white border-0">
+            <a className="btn background-gradient-left link-dark text-white border-0 py-2 px-8 h6 mb-0 fs-6 rounded-8">
               所有課程列表
             </a>
           </Link>

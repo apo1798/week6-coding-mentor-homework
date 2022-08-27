@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ArticleCard = ({ title, image, text }) => {
   return (
-    <div className="col-md-4">
+    <div className="col-lg-4">
       <div className="card bg-transparent p-8 article-card">
         <div className="rounded-border rounded-border-top-left"></div>
         <div className="rounded-border rounded-border-top-right"></div>

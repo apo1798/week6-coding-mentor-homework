@@ -9,7 +9,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
         />
       </Head>
-      <body className="bg-gray-700">
+      <body className="bg-gray-700 overflow-x-hidden">
         <Main />
         <NextScript />
       </body>
