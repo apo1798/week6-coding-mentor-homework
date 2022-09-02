@@ -1,0 +1,21 @@
+.price-section {
+  .register-button {
+    height: 32px;
+    width: 32px;
+  }
+  .price-list {
+    &:hover {
+      color: $primary !important;
+      .register-button {
+        color: black;
+      }
+    }
+  }
+}
+
+.w-desktop-50 {
+  width: 50%;
+  @include pad {
+    width: 100%;
+  }
+}

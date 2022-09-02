@@ -4,7 +4,7 @@ import Image from "next/image";
 const ArticleCard = ({ title, image, text }) => {
   return (
     <div className="col-lg-4">
-      <div className="card bg-transparent p-8 article-card">
+      <div className="card bg-transparent px-8 my-lg-8 article-card p-8">
         <div className="rounded-border rounded-border-top-left"></div>
         <div className="rounded-border rounded-border-top-right"></div>
         <div className="rounded-border rounded-border-bottom-left"></div>

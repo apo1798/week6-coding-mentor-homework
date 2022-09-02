@@ -1,19 +1,19 @@
 import Title from "../UI/Title";
 
-const content = [
-  {
-    index: "01",
-    title: "預約",
-    text: "線上預約指定課程與老師 由老師安排專屬課程",
-  },
-];
+// const content = [
+//   {
+//     index: "01",
+//     title: "預約",
+//     text: "線上預約指定課程與老師 由老師安排專屬課程",
+//   },
+// ];
 
 const Process = () => {
   return (
     <section className="">
       <div className="container py-10 py-lg-20">
         <Title title="預期上課流程" className="mb-16 mb-lg-22" />
-        <ul className="row list-unstyled mb-0 gap-12 gap-md-0 gy-10">
+        <ul className="row list-unstyled mb-0 gap-12 gap-md-0 gy-0 gy-lg-10">
           <li className="col-md-6 col-lg-3">
             <div className="border border-white process-card rounded-12 p-12">
               <h6 className="h1 text-primary">01</h6>

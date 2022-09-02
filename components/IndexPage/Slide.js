@@ -1,6 +1,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Title from "../UI/Title";
+import Link from "next/link";
 // import Image from "next/image";
 import Image from "next/future/image";
 
@@ -69,9 +70,13 @@ const Slide = () => {
                 歡迎各大程式大神加入我們，用知識在世界留下一點影響力。
               </p>
             </div>
-            <button className="btn btn-outline-light py-2 px-8">
-              立即預約
-            </button>
+            <Link href="/">
+              <a href="">
+                <button className="btn btn-outline-light py-2 px-8">
+                  立即預約
+                </button>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

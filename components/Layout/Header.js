@@ -1,7 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-
-// import Logo from "../../public/images/logo.svg";
 
 const Header = () => {
   return (
@@ -16,7 +13,6 @@ const Header = () => {
                   width={174}
                   height={42}
                   alt="Coding Home Logo"
-                  className=""
                 />
               </a>
             </Link>
@@ -37,7 +33,7 @@ const Header = () => {
               className="collapse navbar-collapse flex-grow-0"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav d-lg-flex mt-8 gap-6 mt-lg-0 gap-lg-12">
+              <ul className="navbar-nav d-lg-flex mt-8 gap-6 mt-lg-0 gap-lg-12 text-center">
                 <li>
                   <Link href="/">
                     <a className="text-white link-primary text-decoration-none">
@@ -46,7 +42,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
+                  <Link href="/class">
                     <a className="text-white link-primary text-decoration-none">
                       課程介紹
                     </a>
@@ -54,7 +50,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="/">
-                    <a className="text-white link-primary text-decoration-none d-flex gap-3">
+                    <a className="text-white link-primary text-decoration-none d-flex gap-2 justify-content-center">
                       <span className="material-icons">account_circle</span>
                       登入
                     </a>

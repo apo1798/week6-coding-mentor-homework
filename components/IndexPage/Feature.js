@@ -19,7 +19,7 @@ const Feature = () => {
               title={"手把手帶你\n親自到家教到會"}
             />
           </li>
-          <li className="col-md-6 col-lg-3 text-center ">
+          <li className="col-md-6 col-lg-3 text-center mt-0 mb-md-4  mb-lg-0">
             <div className="px-6 py-12 rounded-12 feature-card">
               <span className="material-icons-outlined mb-6">code</span>
               <h6 className="mb-4">超過 100 種專業課程</h6>
@@ -30,7 +30,7 @@ const Feature = () => {
               </p>
             </div>
           </li>
-          <li className="col-md-6 col-lg-3 text-center ">
+          <li className="col-md-6 col-lg-3 text-center mt-0 mb-md-4  mb-lg-0">
             <div className="px-6 py-12 rounded-12 feature-card">
               <span className="material-icons-outlined mb-6">
                 <span className="material-icons-outlined">rocket_launch</span>
@@ -43,7 +43,7 @@ const Feature = () => {
               </p>
             </div>
           </li>
-          <li className="col-md-6 col-lg-3 text-center ">
+          <li className="col-md-6 col-lg-3 text-center mt-0">
             <div className="px-6 py-12 rounded-12 feature-card">
               <span className="material-icons-outlined mb-6">place</span>
               <h6 className="mb-4">指定地點</h6>
@@ -54,7 +54,7 @@ const Feature = () => {
               </p>
             </div>
           </li>
-          <li className="col-md-6 col-lg-3 text-center d-none d-md-block d-lg-none ">
+          <li className="col-md-6 col-lg-3 text-center mt-0 d-none d-md-block d-lg-none ">
             <div className="px-6 py-12 rounded-12 feature-card">
               <span className="material-icons-outlined mb-6">luggage</span>
               <h6 className="mb-4">好想出去玩喔</h6>

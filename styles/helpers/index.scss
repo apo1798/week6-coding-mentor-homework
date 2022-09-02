@@ -5,6 +5,7 @@
 
 // Page scss files
 @import "./index_page";
+@import "./course";
 
 body {
   color: white;
@@ -47,7 +48,10 @@ svg {
 .title-line-start {
   @include title-line(0);
 }
-
+.px-6px {
+  padding-right: 6px;
+  padding-left: 6px;
+}
 .rounded-8 {
   border-radius: 8px;
 }
@@ -74,6 +78,11 @@ svg {
 .fs-18 {
   font-size: 18px !important;
 }
+.fs-mobile-32 {
+  @include mobile {
+    font-size: 32px !important;
+  }
+}
 .fs-80 {
   font-size: 80px;
 }
@@ -82,4 +91,37 @@ svg {
 }
 .font-Azeret {
   font-family: "Azeret Mono";
+}
+.list-style-square-primary {
+  li {
+    position: relative;
+    padding-left: 13px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      content: "";
+      width: 5px;
+      height: 5px;
+      background-color: $primary;
+    }
+  }
+}
+.flex-mobile-order-1 {
+  @include pad {
+    order: 1;
+  }
+}
+.flex-mobile-order-2 {
+  @include pad {
+    order: 2;
+  }
+}
+.text-truncate-3 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }

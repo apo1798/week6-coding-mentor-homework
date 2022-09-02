@@ -11,7 +11,7 @@ import Layout from "../components/Layout/Layout";
 import Article from "../components/IndexPage/Article";
 import Slide from "../components/IndexPage/Slide";
 
-const Home = () => {
+const IndexPage = () => {
   return (
     <>
       <SiteTitle siteTitle="首頁" />
@@ -29,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default IndexPage;

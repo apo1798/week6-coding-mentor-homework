@@ -7,14 +7,14 @@ import Teacher03 from "../../public/images/teacher03.jpg";
 import Teacher04 from "../../public/images/teacher04.jpg";
 
 import Link from "next/link";
-import CourseCard from "./CourseCard";
+import CourseCard from "../IndexPage/CourseCard";
 
-const Course = () => {
+const CourseRecommendation = () => {
   return (
-    <section className="course-section py-10 py-lg-20">
+    <section className="course-section py-10 py-lg-19 bg-black">
       <div className="container">
-        <Title title="熱門推薦課程" className="mb-10 mb-lg-21" />
-        <div className="row mb-6 mb-lg-12 gap-4 gap-md-0 gy-4 ">
+        <Title title="其他人也看了這些課程" className="mb-10 mb-lg-16" />
+        <div className="row gap-4 gap-md-0">
           {courseContent.map((course) => (
             <CourseCard
               key={course.title}
@@ -25,21 +25,15 @@ const Course = () => {
               description={course.description}
               time={course.time}
               price={course.price}
+              linkCard={true}
             />
           ))}
-        </div>
-        <div className="text-center">
-          <Link href="/">
-            <a className="btn background-gradient-left link-dark text-white border-0 py-2 px-8 h6 mb-0 fs-6 rounded-8">
-              所有課程列表
-            </a>
-          </Link>
         </div>
       </div>
     </section>
   );
 };
-export default Course;
+export default CourseRecommendation;
 
 const courseContent = [
   {
@@ -48,7 +42,7 @@ const courseContent = [
     title: "基礎前端 - HTML",
     category: "前端語言",
     description:
-      "帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。",
+      "帶領無基礎的平民老百姓，從最基礎的 HTML語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...",
     time: "50分鐘",
     price: "NT$1600",
   },
@@ -58,7 +52,7 @@ const courseContent = [
     title: "2022 Python 全攻略｜從入門到實務",
     category: "後端語言",
     description:
-      "Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本堂課帶你無痛入門，開發簡單的應用！",
+      "Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...",
     time: "50分鐘",
     price: "NT$2200",
   },
@@ -68,7 +62,7 @@ const courseContent = [
     title: "活用 Line Bot ｜APP 開發到上架完整實戰攻略",
     category: "行動應用開發",
     description:
-      "Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最合適的應答句，本堂課會帶你了解 Line Bot 如何結合其他工具的應用。",
+      "Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...",
     time: "50分鐘",
     price: "NT$1800",
   },
@@ -78,7 +72,7 @@ const courseContent = [
     title: "Linux 零基礎七天入門｜入門到實務",
     category: "作業系統與伺服器",
     description:
-      "Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式語言的基本語法。",
+      "Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...",
     time: "50分鐘",
     price: "NT$1100",
   },

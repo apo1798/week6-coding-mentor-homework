@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section className="text-center">
       <div className="hero d-flex align-items-center justify-content-center ">
-        <div className="px-7 py-8 py-lg-13 px-lg-19 bg-gray-900 text-center border-white border position-relative my-15 my-lg-60">
+        <div className="px-7 mx-2 py-8 py-lg-13 px-lg-19 bg-gray-900 text-center border-white border position-relative my-15 my-lg-60">
           <h1 className="fw-bold mb-6">
             <span className="text-gradient">全台最豐富的程式家教</span>
             <br />

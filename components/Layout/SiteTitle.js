@@ -1,9 +1,10 @@
 import Head from "next/head";
 
 const SiteTitle = ({ siteTitle }) => {
+  const title = `${siteTitle} | 程式家教`;
   return (
     <Head>
-      <title>{siteTitle} | 程式家教</title>
+      <title>{title}</title>
     </Head>
   );
 };
