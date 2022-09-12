@@ -5,7 +5,7 @@ const Feature = () => {
     <section className="bg-gray-300 feature-section">
       <div className="container py-10 py-lg-20">
         <ul className="row align-items-center list-unstyled mb-0 gap-6 gy-4 gap-md-0">
-          <li className="col-lg-3">
+          <li className="col-lg-3 mb-md-5 mb-lg-0">
             <div className="d-none d-lg-block">
               <h3 className="text-center text-lg-start mb-4">
                 手把手帶你
